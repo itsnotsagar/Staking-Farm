@@ -350,12 +350,12 @@
     }
   ],
   "allSourcePaths": {
-    "11": "/Users/patrick/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OperatorInterface.sol",
-    "12": "/Users/patrick/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OracleInterface.sol",
-    "8": "/Users/patrick/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol"
+    "11": "/Users/itsnotsagar/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OperatorInterface.sol",
+    "12": "/Users/itsnotsagar/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OracleInterface.sol",
+    "8": "/Users/itsnotsagar/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol"
   },
   "ast": {
-    "absolutePath": "/Users/patrick/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OperatorInterface.sol",
+    "absolutePath": "/Users/itsnotsagar/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OperatorInterface.sol",
     "exportedSymbols": {
       "ChainlinkRequestInterface": [
         3374
@@ -383,7 +383,7 @@
         "src": "32:23:11"
       },
       {
-        "absolutePath": "/Users/patrick/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OracleInterface.sol",
+        "absolutePath": "/Users/itsnotsagar/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OracleInterface.sol",
         "file": "./OracleInterface.sol",
         "id": 2297,
         "nameLocation": "-1:-1:-1",
@@ -395,7 +395,7 @@
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/patrick/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol",
+        "absolutePath": "/Users/itsnotsagar/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol",
         "file": "./ChainlinkRequestInterface.sol",
         "id": 2298,
         "nameLocation": "-1:-1:-1",
@@ -434,6 +434,7 @@
             "src": "180:25:11"
           }
         ],
+        "canonicalName": "OperatorInterface",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
@@ -1353,7 +1354,7 @@
       "enabled": true,
       "runs": 200
     },
-    "version": "0.8.7+commit.e28d00a7"
+    "version": "0.8.13+commit.abaa5c0e"
   },
   "contractName": "OperatorInterface",
   "coverageMap": {
@@ -1381,6 +1382,6 @@
   "sha1": "0ebc9faf033f8f23977c7a315441247dc467b94d",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"./OracleInterface.sol\";\nimport \"./ChainlinkRequestInterface.sol\";\n\ninterface OperatorInterface is OracleInterface, ChainlinkRequestInterface {\n\n  function requestOracleData(\n    address sender,\n    uint256 payment,\n    bytes32 specId,\n    address callbackAddress,\n    bytes4 callbackFunctionId,\n    uint256 nonce,\n    uint256 dataVersion,\n    bytes calldata data\n  )\n    external;\n\n  function fulfillOracleRequest2(\n    bytes32 requestId,\n    uint256 payment,\n    address callbackAddress,\n    bytes4 callbackFunctionId,\n    uint256 expiration,\n    bytes calldata data\n  )\n    external\n    returns (\n      bool\n    );\n\n  function ownerTransferAndCall(\n    address to,\n    uint256 value,\n    bytes calldata data\n  )\n    external\n    returns (\n      bool success\n    );\n\n  function distributeFunds(\n    address payable[] calldata receivers,\n    uint[] calldata amounts\n  )\n    external\n    payable;\n\n  function getAuthorizedSenders()\n    external\n    returns (\n      address[] memory\n    );\n\n  function setAuthorizedSenders(\n    address[] calldata senders\n  ) external;\n\n  function getForwarder()\n    external\n    returns (\n      address\n    );\n}\n",
   "sourceMap": "",
-  "sourcePath": "/Users/patrick/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OperatorInterface.sol",
+  "sourcePath": "/Users/itsnotsagar/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/OperatorInterface.sol",
   "type": "interface"
 }
