@@ -104,7 +104,7 @@ export const Main = () => {
           root: classes.title,
         }}
       >
-        Dapp Token Farm
+        Staking Farm
       </Typography>
       <YourWallet supportedTokens={supportedTokens} />
       <TokenFarmContract supportedTokens={supportedTokens} />
