@@ -21,9 +21,6 @@ export type Token = {
   name: string
 }
 
-// Why not in a css folder? 
-// For material UI
-// https://material-ui.com/styles/basics/
 const useStyles = makeStyles((theme) => ({
   title: {
     color: theme.palette.common.white,
