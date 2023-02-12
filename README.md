@@ -27,37 +27,36 @@ useful because it is the simplest way to deploy your idle crypto holdings and es
 passive income. Most importantly – staking is much more eco-friendly than mining.
 
 # Prerequisite
-Install the below programs in your machine before running the commands given in `Steps`
+Install the below programs in your machine before running the commands given in `Steps`.
 1. `brownie` 
-2. `truffle` - use the test accounts given here to log in to meta mask account or you can use your own if you have balance
+2. `truffle` - use the test accounts given here to log in to meta mask account or you can use your own if you have balance.
 3. `node`
 4. `ganache-cli`
 5. `yarn`
 6. `python`
 
 # Steps
-1. Clone the repo
+1. Clone the repo.
 ```
 git clone https://github.com/itsnotsagar/staking_reward.git
 ```
-2. Open the repo in `VS-Code`
-3. Install the required dependencies and modules
+2. Open the repo in `VS-Code`.
+3. Edit the `.env` and `.env.example` file by pasting in your own APIs and private keys.
+4. Install the required dependencies and modules.
 ```
 yarn install
 ```
-4. Deploy the smart contracts on the kovan test network
+4. Deploy the smart contracts on the kovan test network.
 ```
 brownie run scripts/deploy.py --network kovan
 ```
-5. Change directory to `front_end` folder
+5. Change directory to `front_end` folder and run the following to start the website in localhost.
 ```
 cd front_end
+yarn
+yarn start
 ```
-6. Start the server 
-```
-npm start
-```
-7. To issue staking reward run the `issue_token.py` script in the `/scripts` directory
+7. To issue staking reward run the `issue_token.py` script in the `/scripts` directory.
 # Screenshots
 <p align="center">
 <img width="579" alt="Screenshot 2023-02-12 at 12 03 43 PM" src="https://user-images.githubusercontent.com/56265949/218296758-3e48fc7e-1523-4519-b061-63e509a31432.png">
