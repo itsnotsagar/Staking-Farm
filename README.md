@@ -46,11 +46,11 @@ git clone https://github.com/itsnotsagar/staking_reward.git
 ```
 yarn install
 ```
-4. Deploy the smart contracts on the kovan test network.
+5. Deploy the smart contracts on the kovan test network.
 ```
 brownie run scripts/deploy.py --network kovan
 ```
-5. Change directory to `front_end` folder and run the following to start the website in localhost.
+6. Change directory to `front_end` folder and run the following to start the website in localhost.
 ```
 cd front_end
 yarn
